@@ -2,9 +2,9 @@
 
 ### Description
 
-This project is a website application created using React that includes a page listing 
-all MLB teams, a page for each team showing their roster, and a page for individual players
-showing some biograhpical information and tables with their stats - along with dynamic navigation. 
+This project is a website application created using React with REST endpoints that includes a page 
+listing all MLB teams, a page for each team listing their roster, and a page for individual players
+showing some biographical information and tables with their stats - along with dynamic navigation. 
 
 ### Initial Set-Up
 
