@@ -8,6 +8,7 @@ showing some biograhpical information and tables with their stats - along with d
 
 ### Initial Set-Up
 
+Node.js and npm (Node package manager) is required for this project before continuing to the next step.
 In the project directory, run `npm install` to install the package dependancies.
 
 ### Available Scripts

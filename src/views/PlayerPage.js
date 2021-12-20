@@ -168,8 +168,8 @@ const PlayerPage = () => {
                         />
                     </div>
                     <div style={{padding: 5}}> 
-                        <h1>{playerBioState.firstLastName}</h1> 
-                        <p style={{ color: '#080808', fontWeight: 'bold' }}>{playerPositionState}</p>
+                        <h1>{playerBioState.firstLastName}{playerBioState.primaryNumber && ', #'}{playerBioState.primaryNumber}</h1> 
+                        <p style={{ color: '#080808', fontWeight: '400', fontSize: 14 }}>{playerPositionState}</p>
                         <p style={{ marginTop: 6}}>
                             <b>Bats:</b> {playerBioState.batSide && playerBioState.batSide.description}, 
                             <b> Throws:</b> {playerBioState.pitchHand && playerBioState.pitchHand.description}
