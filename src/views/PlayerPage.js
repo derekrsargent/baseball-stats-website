@@ -33,6 +33,10 @@ const PlayerPage = () => {
         fetchTeam();
     }, [teamId]);
 
+    useEffect(() => {
+        console.log(playerBioState)
+    }, [playerBioState]);
+
     const DisplayStats = ({stats}) => {
         return (
             <div style={{padding: 5}}>
@@ -153,7 +157,7 @@ const PlayerPage = () => {
 
     return (
         <>
-            <NavBar showTeamsNav={true} teamId={133} teamName={playerTeamState}/>
+            <NavBar showTeamsNav={true} teamId={teamId} teamName={playerTeamState}/>
             <div style={{padding: 5}}>  
                 <div style={{padding: 5}}>  
                     <div style={{ float: 'left', width: 100, padding: 5 }}>
@@ -167,19 +171,23 @@ const PlayerPage = () => {
                         <h1>{playerBioState.firstLastName}</h1> 
                         <p style={{ color: '#080808', fontWeight: 'bold' }}>{playerPositionState}</p>
                         <p style={{ marginTop: 6}}>
-                            Bats: {playerBioState.batSide && playerBioState.batSide.description}
+                            <b>Bats:</b> {playerBioState.batSide && playerBioState.batSide.description}, 
+                            <b> Throws:</b> {playerBioState.pitchHand && playerBioState.pitchHand.description}
                         </p>      
                         <p>
-                            Throws: {playerBioState.pitchHand && playerBioState.pitchHand.description}
-                        </p>      
+                            <b>Born:</b> {playerBioState.birthDate}
+                        </p> 
                         <p>
-                            Born: {playerBioState.birthDate}
+                            <b>Height:</b> {playerBioState.height}
+                        </p> 
+                        <p>
+                            <b>Weight:</b> {playerBioState.weight} lbs
                         </p> 
                     </div> 
                 </div>
-                <div style={{padding: 5}}>    
+                <div style={{padding: 5, paddingLeft: 20}}>    
                     {playerState && playerState.map((stats, index) => 
-                            <DisplayStats key={index} stats={stats} />
+                        <DisplayStats key={index} stats={stats} />
                     )}
                     {!playerState && 
                         <p style={{fontSize: 14, fontWeight: 'bold', marginTop: 20}}>No stats available.</p>

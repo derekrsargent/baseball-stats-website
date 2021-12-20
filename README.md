@@ -1,18 +1,16 @@
-# Baseball Team and Player Stat Website Application
+## Baseball Team and Player Stat Website Application
 
-This project is a website application that shows 
+### Description
 
-## Initial Set-Up
+This project is a website application created using React that includes a page listing 
+all MLB teams, a page for each team showing their roster, and a page for individual players
+showing some biograhpical information and tables with their stats - along with dynamic navigation. 
 
-In the project directory, you can run:
+### Initial Set-Up
 
-### `npm install`
+In the project directory, run `npm install` to install the package dependancies.
 
-## Available Scripts
+### Available Scripts
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
+In the project directory, run `npm start` to run the app in development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
